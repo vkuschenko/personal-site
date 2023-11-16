@@ -1,5 +1,4 @@
 ---
-
 ---
 
 <html lang="en">
@@ -15,6 +14,17 @@
     <title>Astro</title>
   </head>
   <body>
-    <slot />
+    <main class="container">
+      <slot />
+    </main>
   </body>
 </html>
+
+<style>
+  .container {
+    max-width: 1153px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 16px;
+  }
+</style>
