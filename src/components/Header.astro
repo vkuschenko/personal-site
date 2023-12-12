@@ -1,0 +1,26 @@
+---
+import NavigationDesktop from "./NavigationDesktop.astro";
+import NavigationMobile from "./NavigationMobile.astro";
+---
+
+<header class:list={["header", "container"]}>
+  <NavigationDesktop />
+  <NavigationMobile />
+</header>
+<div class="placeholder"></div>
+
+<style>
+  .placeholder {
+    height: 60px;
+    width: 100%;
+  }
+
+  .header {
+    height: 60px;
+    position: sticky;
+    max-width: 1153px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 16px;
+  }
+</style>
