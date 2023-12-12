@@ -1,0 +1,15 @@
+---
+import { Image } from "astro:assets";
+import photoImg from "../assets/images/photo.jpeg";
+---
+
+<Image class="photo" src={photoImg} alt="Viktor Kushchenko's photo" />
+
+<style>
+  .photo {
+    --photo-size: 56px;
+    width: var(--photo-size);
+    height: var(--photo-size);
+    border-radius: 50%;
+  }
+</style>
