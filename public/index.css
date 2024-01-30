@@ -1,3 +1,8 @@
+:root {
+  --clr-body: #1d1b3c;
+  --clr-text: #ffffff;
+}
+
 *,
 *::before,
 *::after {
@@ -5,5 +10,10 @@
   margin: 0;
   padding: 0;
   font-family: "Karla", sans-serif;
-  font-size: 16px;
+  font-size: 18px;
+}
+
+body {
+  background-color: var(--clr-body);
+  color: var(--clr-text);
 }
