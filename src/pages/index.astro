@@ -1,50 +1,8 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-import Photo from "../components/Photo.astro";
-import BagesList from "../components/BagesList.astro";
-import Bage from "../components/Bage.astro";
+import Hero from "../components/Hero.astro";
 ---
 
 <BaseLayout>
-  <Photo />
-
-  <div class="about">
-    <p>
-      Hello! I'm Viktor, and I am a software engineer with 10+ years of
-      experience. I am lucky that I had a chance to be involved into the
-      projects of different kinds: big media, sports, fin-tech, messenger and
-      even a security and AI.
-    </p>
-
-    <p>
-      During my carear I've spent couple of years living and working in
-      Netherlands.
-    </p>
-
-    <p>Most of my free time I dedicate to my little sone and family.</p>
-
-    <BagesList>
-      <Bage label="JavaScript" />
-      <Bage label="TypeScript" />
-      <Bage label="C#" />
-    </BagesList>
-
-    <BagesList>
-      <Bage label="React" />
-      <Bage label="Vue" />
-    </BagesList>
-
-    <BagesList>
-      <Bage label="Jest" />
-      <Bage label="Storybook" />
-      <Bage label="Playwright" />
-    </BagesList>
-
-    <BagesList>
-      <Bage label="Git" />
-      <Bage label="Docker" />
-      <Bage label="" />
-      <Bage label="" />
-    </BagesList>
-  </div>
+  <Hero />
 </BaseLayout>

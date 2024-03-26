@@ -1,0 +1,65 @@
+---
+import Photo from "./Photo.astro";
+---
+
+<section class="hero">
+  <Photo />
+
+  <div class="intro">
+    <p class="name">Viktor Kushchenko</p>
+
+    <p class="motto">
+      Bring a <b class:list={["scream", "accent"]}>solution</b> to your <b
+        class:list={["scream", "accent"]}>problems</b
+      >
+    </p>
+  </div>
+</section>
+
+<style>
+  .hero {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+  }
+
+  .intro {
+    text-align: center;
+  }
+
+  .name {
+    color: var(--clr-text);
+    font-size: 24px;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+  }
+
+  .motto {
+    max-width: 550px;
+    margin-bottom: 18px;
+    font-size: 58px;
+    line-height: 1.25;
+    font-weight: 500;
+    font-style: italic;
+  }
+
+  .scream {
+    font-size: 58px;
+    font-weight: 600;
+    font-style: italic;
+  }
+
+  @media screen and (min-width: 962px) {
+    .hero {
+      flex-direction: row;
+      gap: 116px;
+    }
+
+    .intro {
+      text-align: left;
+    }
+  }
+</style>
