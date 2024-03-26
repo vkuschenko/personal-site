@@ -1,0 +1,56 @@
+---
+import { Image } from "astro:assets";
+const { name, shortDescription, thumbnail } = Astro.props;
+---
+
+<article class="project">
+  <h6 class="project__name">{name}</h6>
+  <div class="project__thumbnail">
+    <Image
+      class="project__img"
+      width={100}
+      height={100}
+      src={thumbnail}
+      alt={name}
+    />
+  </div>
+  <p class="project__description">{shortDescription}</p>
+</article>
+
+<style>
+  .project {
+  }
+
+  .project__name {
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 16px;
+  }
+
+  .project__thumbnail {
+    padding-bottom: 54%;
+    height: 0;
+    overflow: hidden;
+    margin-bottom: 16px;
+    position: relative;
+  }
+
+  .project__img {
+    top: 0;
+    left: 0;
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  .project__description {
+    font-size: 14px;
+  }
+
+  @media screen and (min-width: 962px) {
+    .project__thumbnail {
+      padding-bottom: 170px;
+    }
+  }
+</style>

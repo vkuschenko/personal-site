@@ -1,0 +1,56 @@
+[
+  {
+    "name": "Kuna Systems",
+    "imageUrl": "/images/idter.png",
+    "descriptionShort": "Kuna is a smart Wi-Fi camera and intercom built into an outdoor light. It detects people at your door and lets you see and talk to them.",
+    "descriptionLong": "Kuna is a smart Wi-Fi camera and intercom built into an outdoor light fixture. It detects people at your door and lets you see and interact with them through your smartphone. Kuna’s security system proactively alerts homeowners of possible intruders, rather than reacting to a break-in attempt and reporting it afterward. With no batteries requiredand simple installation in less than 15 minutes, Kuna is your digital doorman to keep your home safe."
+  },
+  {
+    "name": "Noty.ai",
+    "imageUrl": "/images/noty-ai.png",
+    "descriptionShort": "Noty.ai is a Workplace AI assistant that creates, tracks and pushes work-related to-dos.",
+    "descriptionLong": "Noty.ai is an AI-driven platform transforming video calls and meetings into notes, action items, tasks, and events. It helps to unlock 2 extra hours daily, get work done and make communication 100% actionable."
+  },
+  {
+    "name": "Clerk Chat",
+    "imageUrl": "/images/clerk-chat.png",
+    "descriptionShort": "Create conversations that convert. Clerk Chat is the leading messaging platform for businesses looking to innovate.",
+    "descriptionLong": "Transform your business landline into a textable phone number. Enables phone number in Slack, Microsoft Teams, Salesforce and Clerk Chat webapp. Clerk Chat is a conversational messaging platform which amplifies human agents with AI agents and helps keeping track of customer support, operations, and sales messages."
+  },
+  {
+    "name": "ParagonEX",
+    "imageUrl": "/images/paragonex.png",
+    "descriptionShort": "Fintech software for trading on the financial markets (stocks and ETFs, indices, commodities, currencies, and crypto).",
+    "descriptionLong": "ParagonEx is a technology company offering online brokers a simple off-the-shelf, stable trading platform and Back-Office. Dedicated to the idea of creating a completely perfect all-in-one online trading solution, ParagonEx partnered with a couple of brokers to help develop technology specifically geared toward enhancing their revenue."
+  },
+  {
+    "name": "Graydon",
+    "imageUrl": "/images/graydon.jpg",
+    "descriptionShort": "Graydon is a provider of business credit information and data intelligence.",
+    "descriptionLong": "Graydon is a leading provider of business credit information and data intelligence. Check a company credit score by undertaking a company. When companies have a clear picture of the opportunities and risks they face, co-operation thrives, deals are struck and ideas becomereality. Graydon's mission is to convert vast amounts of data from diverse data sources into information. Based on this information, company generate invaluable economic, financial and commercial insights that help customers make better business decisions and ultimately gain competitive advantage."
+  },
+  {
+    "name": "AudienceScience",
+    "imageUrl": "/images/audiencescience.png",
+    "descriptionShort": "AudienceScience is the SaaS-based Advertising Automation suite, delivering simplicity and accountability to advertisers.",
+    "descriptionLong": "AudienceScience was transforming how global advertisers measurably connect their consumers, data, and media with an easy to use and fully transparent Enterprise Advertising Management system. It specializes in the fields of digital media, advertising platforms, and SaaS."
+  },
+  {
+    "name": "BuzzFeed",
+    "imageUrl": "/images/buzzfeed.png",
+    "descriptionShort": "The leading independent digital media and tech company delivering news and entertainment content to a global audience.",
+    "descriptionLong": "BuzzFeed is a news and entertainment company that is redefining online advertising with its social, content-driven publishing technology. BuzzFeed provides the most shareable breaking news, original reporting, entertainment, and video across the social web to its global audience of more than 200M. It covers breaking news, produces original videos,and creates content that people want to share on the web."
+  },
+  {
+    "name": "Eurosport.fr",
+    "imageUrl": "/images/eurosport.png",
+    "descriptionShort": "Eurosport is a pan-European television sports network, owned and operated by Discovery Communications.",
+    "descriptionLong": "Eurosport is a sports entertainment group that offers a website that enables its users to find news, articles, and videos about a wide variety of sports such as football, tennis, motorsports, rugby, horseracing, and more. It also enables sports fans to find match scores, sports events calendars, and tables with results."
+  },
+  {
+    "name": "Marktplaats.nl (eBay)",
+    "imageUrl": "/images/marktplaats.png",
+    "descriptionShort": "Marktplaats.nl is an online classified advertising site that connects buyers with sellers.",
+    "descriptionLong": "Marktplaats.nl was one of the first websites in the Netherlands dedicated to the classified advertising format online. Since then, it has grown into the most popular website of its kind in the Netherlands with a growing audience among individuals and small businesses. With more than one million listings at any given time, Marktplaats.nl offers avenue where buyers and sellers can meet to trade a wide array of items, from clothing and collectibles to cars and household items."
+  }
+]

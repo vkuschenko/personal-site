@@ -1,0 +1,62 @@
+---
+import Project from "./Project.astro";
+import projectsList from "../data/companies.json";
+---
+
+<siction id="projects" class="projects">
+  <h5 class="projects__heading">Experience</h5>
+  <ul class="projects__list">
+    {
+      projectsList.map((project) => (
+        <li>
+          <Project
+            name={project.name}
+            thumbnail={project.imageUrl}
+            shortDescription={project.descriptionShort}
+            description={project.descriptionLong}
+          />
+        </li>
+      ))
+    }
+  </ul>
+
+  <style>
+    .projects {
+      min-height: calc(100vh - 120px);
+      min-height: calc(100dvh - 120px);
+      margin-bottom: 48px;
+      padding-top: 76px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .projects__heading {
+      margin: 0 auto;
+      font-size: 36px;
+      margin-bottom: 16px;
+    }
+
+    .projects__list {
+      list-style: none;
+      display: grid;
+      grid-template-columns: 100%;
+      align-items: stretch;
+      gap: 16px;
+    }
+
+    @media screen and (min-width: 768px) {
+      .projects__list {
+        grid-template-columns: calc((100% - 16px) / 2) calc((100% - 16px) / 2);
+      }
+    }
+
+    @media screen and (min-width: 962px) {
+      .projects__list {
+        grid-template-columns: calc((100% - 32px) / 3) calc((100% - 32px) / 3) calc(
+            (100% - 32px) / 3
+          );
+      }
+    }
+  </style>
+</siction>
