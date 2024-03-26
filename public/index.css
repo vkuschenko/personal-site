@@ -1,6 +1,10 @@
 :root {
-  --clr-body: #1d1b3c;
-  --clr-text: #ffffff;
+  --clr-body: #ffffff;
+  --clr-text: #001d3d;
+  --clr-black: #000000;
+  --clr-accent: #ff9d00;
+
+  --inner-container-width: 930px;
 }
 
 *,
@@ -9,7 +13,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: "Karla", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 18px;
 }
 
