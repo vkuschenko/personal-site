@@ -1,0 +1,28 @@
+---
+import { Image } from "astro:assets";
+import BaseLayout from "../layouts/BaseLayout.astro";
+import comingSoonImg from "../assets/images/coming-soon.svg";
+---
+
+<BaseLayout>
+  <div class="wrapper">
+    <Image class="planet" src={comingSoonImg} alt="blog coming soon..." />
+  </div>
+</BaseLayout>
+
+<style>
+  .wrapper {
+    flex-grow: 1;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .planet {
+    --photo-size: 256px;
+    width: 50%;
+    height: 50%;
+    background-color: #ffffff;
+  }
+</style>
