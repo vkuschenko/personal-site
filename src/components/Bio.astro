@@ -1,0 +1,72 @@
+---
+import ArrowDown from "./ArrowDown.astro";
+---
+
+<section class="bio">
+  <h3 class="bio__greeting">Hi there! 👋</h3>
+
+  <p class="bio__text">
+    I'm Viktor - a passionate, professional software developer with around 15
+    years of experience. I started my career as a QA engineer, confidently move
+    to QA Automation and then to Developer role. At the moment I'm a fullstack
+    developer but mostly focused on the Frontend, UI and UX. Over the years I
+    had a chance to work with a variaty of languages, frameworks, platforms and
+    technologies.
+  </p>
+
+  <p class="bio__text">
+    On my professional journey I've been involved into the success of many
+    companies of different sizes and kinds. I've worked for enterprises and
+    startups, product companies and outsourcing. As a result I was lucky to gain
+    experience in various fields: big media, sports, fin-tech, messengers, and
+    even security and a little bit in AI.
+  </p>
+
+  <p class="bio__text">
+    My goal is to provide a high quality results, solve problems and help
+    products to grow.
+  </p>
+
+  <p class:list={["bio__text", "last-paragraph"]}>
+    Besides my main job, I used to share my expertise and knowledge as a
+    Frontend Development Coach at one of the IT Schools helping newcomers to
+    start their path in IT.
+  </p>
+
+  <ArrowDown id="to-skills-btn" />
+</section>
+
+<style>
+  .bio {
+    min-height: calc(100vh - 60px);
+    min-height: calc(100dvh - 60px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .bio__greeting {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 18px;
+    color: var(--clr-text) !important;
+  }
+
+  .bio__text {
+    line-height: 1.15;
+    margin-bottom: 18px;
+  }
+
+  .last-paragraph {
+    margin-bottom: 64px;
+  }
+</style>
+
+<script>
+  document.getElementById("to-skills-btn")?.addEventListener("click", () => {
+    const skillsElem = document.getElementById("skills");
+    if (skillsElem) {
+      skillsElem.scrollIntoView({ behavior: "smooth" });
+    }
+  });
+</script>
