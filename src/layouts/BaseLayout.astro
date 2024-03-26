@@ -1,4 +1,5 @@
 ---
+import GlobalStyles from "../components/GlobalStyles.astro";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 ---
@@ -7,19 +8,22 @@ import Footer from "../components/Footer.astro";
   <head>
     <meta charset="utf-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width" />
-    <meta name="generator" content={Astro.generator} />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="stylesheet" href="/index.css" />
     <link rel="stylesheet" href="/fonts.css" />
 
-    <title>Astro</title>
+    <title>Kushchenko Viktor</title>
   </head>
   <body class="body">
+    <GlobalStyles />
     <Header />
 
-    <main class="container">
-      <slot />
+    <main class="main">
+      <div class="inner-main">
+        <slot />
+      </div>
     </main>
 
     <Footer />
@@ -28,18 +32,25 @@ import Footer from "../components/Footer.astro";
 
 <style>
   .body {
+    display: flex;
+    flex-direction: column;
     min-height: 100vh;
     min-height: 100dvh;
-    position: relative;
+  }
+
+  .main {
+    padding: 0 16px;
+    flex-grow: 1;
     display: flex;
     flex-direction: column;
   }
 
-  .container {
-    max-width: 1153px;
+  .inner-main {
     width: 100%;
+    max-width: var(--inner-container-width);
     margin: 0 auto;
-    padding: 0 16px;
     flex-grow: 1;
+    display: flex;
+    flex-direction: column;
   }
 </style>
