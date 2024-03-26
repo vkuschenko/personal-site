@@ -1,0 +1,110 @@
+---
+import BagesList from "./BagesList.astro";
+import Bage from "./Bage.astro";
+import ArrowDown from "./ArrowDown.astro";
+---
+
+<siction id="skills" class="skills">
+  <h5 class="skills__heading">Skills</h5>
+  <div class="skills-list">
+    <BagesList title="Languages">
+      <Bage label="JavaScript" />
+      <Bage label="TypeScript" />
+      <Bage label="C#" />
+      <Bage label="SQL" />
+    </BagesList>
+
+    <BagesList title="Front-end">
+      <Bage label="React" />
+      <Bage label="Vue" />
+      <Bage label="Webpack" />
+      <Bage label="Vite" />
+      <Bage label="CSS / SASS" />
+      <Bage label="CSS-in-JS" />
+      <Bage label="TanStack Query" />
+      <Bage label="WebSocket" />
+    </BagesList>
+
+    <BagesList title="Back-end">
+      <Bage label="NodeJS" />
+      <Bage label="NestJs" />
+      <Bage label="PostgreSQL" />
+      <Bage label="Redis" />
+    </BagesList>
+
+    <BagesList title="Testing">
+      <Bage label="Jest" />
+      <Bage label="Storybook" />
+      <Bage label="Playwright" />
+      <Bage label="Cypress" />
+    </BagesList>
+
+    <BagesList title="Tools">
+      <Bage label="Git" />
+      <Bage label="Docker" />
+      <Bage label="CI/CD" />
+      <Bage label="GitHub" />
+      <Bage label="GitLab" />
+      <Bage label="Jira" />
+    </BagesList>
+
+    <BagesList title="Best Practices">
+      <Bage label="TDD" />
+      <Bage label="Refactoring" />
+      <Bage label="Performance" />
+      <Bage label="Architecture" />
+      <Bage label="Costs Optimization" />
+      <Bage label="Coding Standards" />
+    </BagesList>
+  </div>
+
+  <ArrowDown id="to-projects-btn" />
+</siction>
+
+<style>
+  .skills {
+    min-height: 100vh;
+    min-height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .skills__heading {
+    margin: 0 auto;
+    font-size: 36px;
+    margin-bottom: 16px;
+  }
+
+  .skills-list {
+    display: grid;
+    grid-template-columns: 100%;
+    gap: 16px;
+    row-gap: 64px;
+    align-content: center;
+    margin-bottom: 48px;
+  }
+
+  @media screen and (min-width: 768px) {
+    .skills-list {
+      grid-template-columns: calc((100% - 16px) / 2) calc((100% - 16px) / 2);
+    }
+  }
+
+  @media screen and (min-width: 962px) {
+    .skills-list {
+      grid-template-columns: calc((100% - 32px) / 3) calc((100% - 32px) / 3) calc(
+          (100% - 32px) / 3
+        );
+    }
+  }
+</style>
+
+<script>
+  document.getElementById("to-projects-btn")?.addEventListener("click", () => {
+    const projectsElem = document.getElementById("projects");
+    if (projectsElem) {
+      projectsElem.scrollIntoView({ behavior: "smooth" });
+    }
+  });
+</script>
