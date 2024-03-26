@@ -1,0 +1,84 @@
+---
+
+---
+
+<nav class="nav">
+  <ul class="nav__list">
+    <li>
+      <a class="nav__link" href="/">Home</a>
+    </li>
+    <li>
+      <a class="nav__link" href="/about">About</a>
+    </li>
+    <li>
+      <a class="nav__link" href="/blog">Blog</a>
+    </li>
+  </ul>
+</nav>
+
+<script>
+  const navLinks = document.querySelectorAll("nav a");
+
+  navLinks.forEach((link) => {
+    link.classList.remove("active");
+
+    const currentPath = window.location.pathname.slice(1);
+    const hrefArray = link.href.split("/");
+    const linkPath = hrefArray[hrefArray.length - 1];
+
+    if (currentPath === linkPath) {
+      link.classList.add("nav__link_active");
+    }
+  });
+</script>
+
+<style>
+  .nav {
+    width: 100%;
+    max-width: var(--inner-container-width);
+    height: 60px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+  }
+
+  .nav__list {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 16px;
+  }
+
+  .nav__link,
+  .nav__link:active,
+  .nav__link:visited {
+    color: var(--clr-text);
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    transition: all 0.1s ease-in-out;
+  }
+
+  .nav__link:hover {
+    color: var(--clr-accent) !important;
+    opacity: 0.8;
+  }
+
+  .nav__link_active {
+    font-weight: 700;
+    color: var(--clr-accent) !important;
+  }
+
+  @media screen and (min-width: 962px) {
+    .nav {
+      justify-content: flex-end;
+    }
+
+    .nav__list {
+      width: auto;
+      gap: 32px;
+    }
+  }
+</style>

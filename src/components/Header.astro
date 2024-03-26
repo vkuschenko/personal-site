@@ -1,26 +1,19 @@
 ---
-import NavigationDesktop from "./NavigationDesktop.astro";
-import NavigationMobile from "./NavigationMobile.astro";
+import Navigation from "./Navigation.astro";
 ---
 
-<header class:list={["header", "container"]}>
-  <NavigationDesktop />
-  <NavigationMobile />
+<header class:list={["header"]}>
+  <Navigation />
 </header>
-<div class="placeholder"></div>
 
 <style>
-  .placeholder {
-    height: 60px;
-    width: 100%;
-  }
-
   .header {
-    height: 60px;
     position: sticky;
-    max-width: 1153px;
-    width: 100%;
-    margin: 0 auto;
+    top: 0;
+    left: 0;
+    height: 60px;
     padding: 0 16px;
+    box-shadow: 0 2px 2px -2px rgba(0, 0, 0, 0.15);
+    background-color: var(--clr-body);
   }
 </style>
