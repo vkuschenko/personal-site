@@ -1,19 +1,30 @@
 ---
 import SocialLinks from "./SocialLinks.astro";
+const today = new Date();
+const year = today.getFullYear();
 ---
 
-<footer class="container">
-  <SocialLinks />
+<footer class="footer">
+  <div class="inner-footer">
+    <div>{`© ${year} Viktor Kushchenko`}</div>
+    <SocialLinks />
+  </div>
 </footer>
 
 <style>
-  .container {
-    max-width: 1153px;
-    width: 100%;
-    margin: 0 auto;
+  .footer {
     padding: 0 16px;
     height: 60px;
     display: flex;
     align-items: center;
+  }
+
+  .inner-footer {
+    width: 100%;
+    max-width: var(--inner-container-width);
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
 </style>
