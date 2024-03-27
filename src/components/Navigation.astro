@@ -22,9 +22,9 @@
   navLinks.forEach((link) => {
     link.classList.remove("active");
 
-    const currentPath = window.location.pathname.slice(1);
+    const currentPath = window.location.pathname.slice(1).replace(/\//g, "");
     const hrefArray = link.href.split("/");
-    const linkPath = hrefArray[hrefArray.length - 1];
+    const linkPath = hrefArray[hrefArray.length - 1].replace(/\//g, "");
 
     if (currentPath === linkPath) {
       link.classList.add("nav__link_active");
