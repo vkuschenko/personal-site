@@ -1,0 +1,52 @@
+---
+import GlobalStyles from "../components/GlobalStyles.astro";
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="/index.css" />
+    <link rel="stylesheet" href="/fonts.css" />
+
+    <title>Kushchenko Viktor</title>
+
+    <script
+      src="https://elevenlabs.io/convai-widget/index.js"
+      async
+      type="text/javascript"></script>
+  </head>
+  <body class="body">
+    <GlobalStyles />
+
+    <main class="main">
+      <div>Welcome to my page. Please start conversation using widget!</div>
+      <div>© Oleksandr Semishan</div>
+    </main>
+
+    <elevenlabs-convai agent-id="JNFflUNyTQWkg3Xvl8C3"></elevenlabs-convai>
+  </body>
+</html>
+
+<style>
+  .body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    min-height: 100dvh;
+  }
+
+  .main {
+    padding: 0 16px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+</style>
